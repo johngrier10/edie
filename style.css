@@ -72,6 +72,7 @@ header {display: flex;
 
 header svg{
     width:24px;height:24px;
+
 }
 
 section{
@@ -177,7 +178,7 @@ button{
     flex-direction: column;
     margin: 10px 0 10px 0;
     padding: 2rem 0;
-
+    max-width: 34.1rem;
     width: auto;
     height: 42.2rem;
 
@@ -238,8 +239,8 @@ button{
     border-radius: 12px;
     font-size: 1.6rem;
     font-weight: 500;
-    bottom: 10px;
-    left: 0px;
+    bottom: 1rem;
+    left: 1rem;
     border: 0;
 }
 
@@ -402,6 +403,12 @@ footer form{
  .contact{
      max-width: 36.6rem;
  }
+
+ul li{
+    display: none;
+}
+
+
  @media (min-width: 768px) { 
     .features-cards{
         display: flex;
@@ -468,4 +475,22 @@ footer form{
     .second-col{
         max-width: 66%;
     }
+    header svg{
+        display: none;
+    }
+    ul li{
+        list-style: none;
+        width: 9.0rem;
+        display: block;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+
  }
+
+
