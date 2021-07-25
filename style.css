@@ -408,6 +408,11 @@ ul li{
     display: none;
 }
 
+header svg{
+    position: absolute;
+    right: 0;
+}
+
 
  @media (min-width: 768px) { 
     .features-cards{
