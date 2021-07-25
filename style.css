@@ -1,0 +1,471 @@
+*, *::before,*::after, html{
+    box-sizing: border-box;
+}
+
+ html {
+font-size: 62.5%;
+margin: 0;
+padding: 0;
+overflow-x:hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    color: #333333;
+}
+
+
+p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 20px;
+    color: #4f4f4f;
+}
+
+h1{
+    font-size: 2.4rem;
+    line-height: 36px;
+    margin-top: 10px;
+}
+
+body {
+    font-size: 16px; /* px fallback */
+    font-size: 1.6rem; /* default font-size for document */
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    min-width: 32.0rem;
+    max-width: 1280px
+    /* overflow-x: none; */
+    
+
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+
+
+
+header {display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 1rem 0 1rem;
+}
+
+.logo{
+    font-size: 2.4rem;
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 800;
+}
+
+header svg{
+    width:24px;height:24px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-h1{
+    position: relative;
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
+
+.main-h1::before{
+    content: 'Unhappy with your website?';
+    position: absolute;
+    font-size: 1.2rem;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    color: #2D9CDB;
+    padding-left: 2.0rem;
+    margin-bottom: -7px;
+
+}
+
+.heroImage{
+    /* max-width: 100%;
+    margin-top: 10px; */
+   
+    align-self: center;
+    width: 100%;
+    height: auto;
+}
+
+.heroImage img, .team img{
+
+     border-radius: 18px;   
+     width: 100%;
+    
+
+}
+
+input[type='email']{
+    position: relative;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    height: 4.7rem;
+    color: #bdbdbd;
+    background: #f2f2f2;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.1em;
+    padding: 0 1rem;
+    border: none
+}
+
+form{
+    position: relative;
+    display: flex;
+    align-content: center;
+    background: #f2f2f2;
+    border-radius: 12px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.email-form h5{
+    line-height: 15px;
+    color: #828282;
+    font-size: 1rem;
+    margin: 0 0 5px .5rem;
+}
+
+button{
+    position: absolute;
+    right: 1rem;
+    height: 3.9rem;
+    width: 7.1rem;
+    border-radius: 12px;
+    background: #e0e0e0;
+    color: #828282;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    margin-top: 5px;
+}
+
+.services, .team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.services-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+    padding: 2rem 0;
+
+    width: auto;
+    height: 42.2rem;
+
+    /* border: 1px solid #bdbdbd; */
+    border-radius: 24px;
+}
+
+.services-card:hover{
+    box-shadow: 0 10px 30px rgba(51, 51, 51, 0.1);}
+
+.services-card h2{
+    padding-left: 0;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #333333;
+}
+
+.services-card p, .team p{
+    padding: 0;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #4f4f4f;
+}
+
+.icon-container{
+    display: flex;
+    width: 67px;
+    height: 67px;
+    color: white;
+    
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0 35px 0;
+}
+
+.blue-bg{
+    background: #2D9CDB;
+
+}
+.red-bg{
+    background: #EB5757;
+
+
+}
+
+.green-bg{
+    background: #27AE60;
+
+}
+
+
+.services-card button{
+    position: absolute;
+    width: 116px;
+    height: 42px;
+    border-radius: 12px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    bottom: 10px;
+    left: 0px;
+    border: 0;
+}
+
+.services-card button:hover{
+    background: #2D9CDB;
+    color: #fff;
+}
+
+.edit{
+    width: 24px;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.features h1{
+    margin: 15rem 0 2.5rem 0;
+}
+
+
+
+
+.features-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+}
+
+.features-card img{
+    width: 100%;
+    /* max-width: 54.5; */
+    align-self: center;
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.features-card h4{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #828282;
+}
+
+.features-card h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333333;
+}
+.collage{
+    display: flex;
+    max-width: 65%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.first-col{
+    margin-top: 100%;
+    
+}
+
+.team-col img{
+    width: 15rem;
+}
+
+
+.second-col{
+    padding: 10px 0 10px 10px;
+}
+
+.reviews{
+    padding: 2.0rem 0;
+    width: 100%;
+}
+.reviews p{
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 3.6rem;
+    max-width: 93.7rem;
+    color: #333;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.profile img{
+    border-radius: 12px;
+    width: 21%;
+    margin-right: 20px;
+    height: auto;
+    
+}
+
+.profile h4{
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #333;
+
+}
+
+.profile h5{
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #828282;
+}
+
+footer{
+    background: #100E1D;
+    color: #f2f2f2;
+    /* width: 100%; */
+    padding: 2rem;
+    
+
+}
+
+footer li{
+    list-style: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 36px;
+    
+}
+footer ul{
+    padding: 0;
+}
+footer a{
+    text-decoration: none;
+}
+
+footer form{
+    max-width: 36.6rem;
+    margin-left: 0;
+}
+.footer-home-link{
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+.social{
+    margin-bottom: 20px;
+}
+
+
+
+ .col-1, .col-2{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+ }
+ .contact{
+     max-width: 36.6rem;
+ }
+ @media (min-width: 768px) { 
+    .features-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .features-card{
+        width: 100%;
+    }
+    .col-1{
+        margin-top: 25%;
+    }
+
+    .logo{
+        font-size: 7rem;
+    }
+
+    h1{
+        font-size: 4.8rem;
+        line-height: 72px;
+    }
+    .features-card h4{
+        font-size: 1.4rem;
+    }
+    .features-card h3{
+        font-size: 1.6rem;
+    }
+
+
+
+    p{
+        font-size: 1.8rem;
+        line-height: 27px;
+    }
+    .team{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .team-caption{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+    .main-h1::before{
+        font-size: 1.8rem;
+    }
+    .contact{
+        margin-left: 15%;
+    }
+    .services-card-wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .services-card{
+        padding: 0 .5em;
+    }
+
+    .services h1{
+        align-self: flex-start;
+    }
+    .second-col{
+        max-width: 66%;
+    }
+ }
