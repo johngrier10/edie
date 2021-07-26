@@ -71,8 +71,9 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1.3rem 2rem;
-    left: 0%;
+    left: 0;
     right: 0;
+    margin: 0 auto;
     position: fixed;
     width: 100%;
     background: #fff;
@@ -90,6 +91,10 @@ header {
 header svg{
     width:24px;height:24px;
 
+}
+
+header{
+    max-width: 128rem;
 }
 
 section{
@@ -561,8 +566,12 @@ header svg:hover{
     header .container{
         width: 100%;
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
+        max-width: 128rem;
     }
 
+    header{
+        max-width: 128rem;
+    }
  }
 
