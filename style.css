@@ -384,7 +384,7 @@ footer{
     padding: 2rem;
 }
 
-.footer-container{
+.container{
     max-width: 128.rem;
 }
 
@@ -549,6 +549,19 @@ header svg:hover{
     }
     .features-card img{
         width: 95%;
+    }
+    .container{
+        max-width: 128rem;
+        position: relative;
+        margin: 0 auto;
+        /* width: 100%;
+        display: flex;
+        justify-content: space-between */
+    }
+    header .container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between
     }
  }
 
