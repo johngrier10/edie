@@ -71,6 +71,8 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1.3rem 2rem;
+    left: 0%;
+    right: 0;
     position: fixed;
     width: 100%;
     background: #fff;
@@ -380,8 +382,10 @@ footer{
     color: #f2f2f2;
     width: 100%;
     padding: 2rem;
-    
+}
 
+.footer-container{
+    max-width: 128.rem;
 }
 
 footer li{
