@@ -7,6 +7,8 @@ font-size: 62.5%;
 margin: 0;
 padding: 0;
 overflow-x:hidden;
+/* background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(16,14,29,1) 25%, rgba(12,69,92,1) 51%, rgb(212, 248, 255) 100%); */
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -20,17 +22,20 @@ a{
     text-decoration: none;
 }
 
+input[type="email"]{
+    outline: none ;
+}
 
 p{
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 18px;
-    margin-top: 20px;
+    margin: 2.5rem 0;
     color: #4f4f4f;
 }
 
 h1{
-    font-size: 2.4rem;
+    font-size: 3.4rem;
     line-height: 36px;
     margin-top: 10px;
 }
@@ -62,9 +67,15 @@ a, a:visited, a:hover, a:active {
 
 
 
-header {display: flex;
+header {
+    display: flex;
     justify-content: space-between;
-    padding: 1.3rem 1rem 0 1rem;
+    padding: 1.3rem 2rem;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 10;
+    box-shadow: 0px 5px 5px 0px rgba(198, 198, 198, 0.79)
 }
 
 .logo{
@@ -83,13 +94,13 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 41.7rem;
+    margin: 2rem 0;
 }
 
 .main-h1{
     position: relative;
-    margin-top: 55px;
-    margin-bottom: 15px;
-}
+    margin: 10.5rem 0 2.5rem 0;}
 
 .main-h1::before{
     content: 'Unhappy with your website?';
@@ -99,10 +110,10 @@ section{
     left: 0;
     right: 0;
     color: #2D9CDB;
-    padding-left: 2.0rem;
     margin-bottom: -7px;
 
 }
+
 
 .heroImage{
     /* max-width: 100%;
@@ -111,6 +122,7 @@ section{
     align-self: center;
     width: 100%;
     height: auto;
+    margin: 2.5rem 0;
 }
 
 .heroImage img, .team img{
@@ -151,6 +163,7 @@ form{
     color: #828282;
     font-size: 1rem;
     margin: 0 0 5px .5rem;
+    display: flex;
 }
 
 button{
@@ -265,7 +278,7 @@ button{
 }
 
 .features h1{
-    margin: 15rem 0 2.5rem 0;
+    margin:  2.5rem auto;
 }
 
 
@@ -278,7 +291,6 @@ button{
     justify-content: center;
     margin-bottom: 3.5rem;
     width: 100%;
-    max-width: 90%;
     height: auto;
 }
 
@@ -361,9 +373,12 @@ button{
 }
 
 footer{
+    position: absolute;
+    left: 0;
+    right: 0;
     background: #100E1D;
     color: #f2f2f2;
-    /* width: 100%; */
+    width: 100%;
     padding: 2rem;
     
 
@@ -379,6 +394,9 @@ footer li{
 }
 footer ul{
     padding: 0;
+    width: 66%;
+    position: absolute;
+    right: 0;
 }
 footer a{
     text-decoration: none;
@@ -406,6 +424,7 @@ footer form{
  }
  .contact{
      max-width: 36.6rem;
+     
  }
 
 ul li{
@@ -415,6 +434,10 @@ ul li{
 header svg{
     position: absolute;
     right: 0;
+}
+
+header svg:hover{
+    cursor: pointer;
 }
 
 
@@ -462,6 +485,7 @@ header svg{
         display: flex;
         flex-direction: column;
         align-content: space-between;
+        padding: .5rem;
     }
     .main-h1::before{
         font-size: 1.8rem;
@@ -491,6 +515,7 @@ header svg{
         list-style: none;
         width: 9.0rem;
         display: block;
+        text-align: center;
     }
 
     ul{
@@ -498,12 +523,14 @@ header svg{
         flex-direction: row;
         justify-content: space-between;
         padding: 0;
+        font-weight: 700;
     }
 
     .main-h1{
-        margin-top: 102px;
+        margin-top: 15rem;
         margin-bottom: 34px    
     }
+
     .heroImage{
         margin-bottom: 6rem;
     }   
@@ -511,6 +538,13 @@ header svg{
         margin-bottom: 15rem;
         margin-top: 7.5rem;
 
+    }
+    section{
+        max-width: none;
+        margin: 3rem 0;
+    }
+    .features-card img{
+        width: 95%;
     }
  }
 
