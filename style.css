@@ -6,7 +6,7 @@
 font-size: 62.5%;
 margin: 0;
 padding: 0;
-overflow-x:hidden;
+overflow-x: hidden;
 /* background: rgb(2,0,36);
 background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(16,14,29,1) 25%, rgba(12,69,92,1) 51%, rgb(212, 248, 255) 100%); */
 }
@@ -16,6 +16,26 @@ h1, h2, h3, h4, h5, h6{
     padding: 0;
     font-weight: 500;
     color: #333333;
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 3.6rem;
+    width:  3.6rem;
+    background:#fff;
+    padding: .2rem;
+    cursor: pointer;
+}
+
+.hamburger-line{
+    height: .4rem;
+    width: 2.6rem;
+    background: #333;
+    border-radius: 2px;
+
 }
 
 a{
@@ -40,14 +60,32 @@ h1{
     margin-top: 10px;
 }
 
+
+
+
+ul li{
+    list-style: none;
+    width: 9.0rem;
+    display: block;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    font-weight: 700;
+}
+
 body {
     font-size: 16px; /* px fallback */
     font-size: 1.6rem; /* default font-size for document */
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
     min-width: 32.0rem;
-    max-width: 1280px
-    /* overflow-x: none; */
+    max-width: 1280px;
+    overflow-x: hidden;
     
 
 
@@ -67,19 +105,7 @@ a, a:visited, a:hover, a:active {
 
 
 
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.3rem 2rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    position: fixed;
-    width: 100%;
-    background: #fff;
-    z-index: 10;
-    box-shadow: 0px 5px 5px 0px rgba(198, 198, 198, 0.79)
-}
+
 
 .logo{
     font-size: 2.4rem;
@@ -88,14 +114,25 @@ header {
     font-weight: 800;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    max-width: 1280px;
+    background: #fff;
+    z-index: 2;
+    height: 8vh;
+    padding: 0 2rem;
+    align-items: center;
+}
+
 header svg{
     width:24px;height:24px;
 
 }
 
-header{
-    max-width: 128rem;
-}
+
 
 section{
     display: flex;
@@ -201,7 +238,7 @@ button{
     display: flex;
     flex-direction: column;
     margin: 10px 0 10px 0;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     max-width: 34.1rem;
     width: auto;
     height: 42.2rem;
@@ -390,7 +427,7 @@ footer{
 }
 
 .container{
-    max-width: 128.rem;
+    max-width: 41.7rem;
 }
 
 footer li{
@@ -436,9 +473,7 @@ footer form{
      
  }
 
-ul li{
-    display: none;
-}
+
 
 header svg{
     position: absolute;
@@ -448,6 +483,7 @@ header svg{
 header svg:hover{
     cursor: pointer;
 }
+
 
 
  @media (min-width: 768px) { 
@@ -520,20 +556,9 @@ header svg:hover{
     header svg{
         display: none;
     }
-    ul li{
-        list-style: none;
-        width: 9.0rem;
-        display: block;
-        text-align: center;
-    }
 
-    ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0;
-        font-weight: 700;
-    }
+
+
 
     .main-h1{
         margin-top: 15rem;
@@ -545,7 +570,7 @@ header svg:hover{
     }   
     .contact {
         margin-bottom: 15rem;
-        margin-top: 7.5rem;
+        margin-top: -1.5rem;
 
     }
     section{
@@ -563,15 +588,25 @@ header svg:hover{
         display: flex;
         justify-content: space-between */
     }
-    header .container{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        max-width: 128rem;
-    }
-
-    header{
-        max-width: 128rem;
-    }
  }
+ @media only screen and (max-width: 600px) {
+    nav ul {
+      /* display: none; */
+      position: absolute;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background: #fff;
+      top: 4.9rem;
+      right: 0;
+      height: 50vh;
+      width: 50vw;
+      transform: translateX(50vw);
+    }
 
+  
+
+    .hamburger{
+        display: flex;
+    }
+  }
